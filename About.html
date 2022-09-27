@@ -1,0 +1,951 @@
+index<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- header part start-->
+    <header id="top_header">
+        <div class="header_fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-6">
+                        <div class="header_left d-flex">
+                            <div class="logo">
+                                <button class="menu_btn d-lg-none">
+                                    <i class="fas fa-bars" data-bs-toggle="offcanvas" data-bs-target="#mobile_menu">
+                                    </i></button>
+                                <a href="#"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <div class="search_box d-none d-lg-block">
+                                <div class="input-group">
+                                    <!--<i class="fa-solid fa-angle-down"></i>-->
+                                    <select name="" id="" style="-webkit-appearance: none;" class="header_left_value">
+                                        <option value="">Category</option>
+                                        <option value="">Groceries</option>
+                                        <option value="">Computer</option>
+                                        <option value="">Women</option>
+                                        <option value="">Electronics</option>
+                                        <option value="">Men</option>
+                                        <option value="">Baby</option>
+                                        <option value="">Sports</option>
+                                    </select>
+
+                                    <input type="text" class="form-control" placeholder="What are you looking for..."
+                                        aria-label="Text input with 2 dropdown buttons">
+                                    <button class="btn btn-outline-secondary">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <div class="header_right d-flex justify-content-end">
+                            <p class="d-none d-xl-block d-flex"><i class="fas fa-location-dot"></i> Dhaka,Bangladesh
+                            </p>
+                            <div class="country_flags d-none d-md-block">
+                                <div class="flags">
+                                    <div class="input-group mb-3">
+                                        <select name="" id="" style="-webkit-appearance: none;"
+                                            class="header_left_value">
+                                            <option value="">English-USD</option>
+                                            <option value="">Bangla-BDT</option>
+                                            <option value="">Franch-FRF</option>
+                                            <option value="">India-RUPI</option>
+                                            <option value="">Turkish-LIRA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-user-plus"></i>Sing Up</a>
+
+                            <button class="header_cart d-flex" data-bs-toggle="offcanvas"
+                                data-bs-target="#header-offcanvasRight">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Cart</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- dekstrop menu start-->
+                <nav id="dekstrop_menu" class="navbar d-none d-lg-block">
+                    <div class="container">
+                        <div class="main_menu">
+                            <ul>
+                                <li class="dropdown_menu"><a href="#">Home<i class="fa-solid fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="index.html">Home-01</a></li>
+                                        <li><a href="index.html">Home-02</a></li>
+                                        <li><a href="index.html">Home-03</a></li>
+                                        <li><a href="index.html">Home-04</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="mega_menu"><a href="#">Collection<i class="fa-solid fa-angle-down"></i></a>
+                                    <div class="megamenu_container">
+                                        <h5>Groceries
+                                            <ul>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i> Meat &
+                                                        Seafood</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Forzen
+                                                        Food</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Beverage</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Dairy</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Beverage</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Bekery
+                                                        & Bread</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Candy
+                                                    </a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Beverage</a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>Electronics
+                                            <ul>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Computer & Laptop</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Camera</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Headphone</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Smartwatch</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Mobile
+                                                        & Tablets</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Television</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Smartphone </a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Speakers</a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>Women
+                                            <ul>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Jewelry</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Athletic shoes</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Jackets</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Socks</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Sleepwear</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Dresses</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>T-shirt
+                                                    </a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Hats</a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>Man
+                                            <ul>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Glasses</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Socks</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Hats</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Athletic shoes</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Jackets</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Sleepwear</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Dresses</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>T-shirt
+                                                    </a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>Sports
+                                            <ul>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Edition</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Headset</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Mouse pad</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Mouse</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Glasses</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        keyboadr</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Microphone</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Controller Charger</a></li>
+                                            </ul>
+                                        </h5>
+                                    </div>
+                                </li>
+
+                                <li class="dropdown_menu"><a href="#">Pages<i class="fa-solid fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="About.html">About</a></li>
+                                        <li><a href="Privacy.html">Privacy Policy</a></li>
+                                        <li><a href="Terms&Conditions.html">Terms & Conditions</a></li>
+                                        <li><a href="#">Comming Soon</a></li>
+                                        <li><a href="#">404</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Hot Offers</a></li>
+                                <li class="dropdown_menu"><a href="#">Shop<i class="fa-solid fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="Shop.html">Shop</a></li>
+                                        <li><a href="Shop_details.html">Shop Details</a></li>
+                                        <li><a href="Shop.html">Shop Search</a></li>
+                                        <li><a href="Shop.html">Shop Cart</a></li>
+                                        <li><a href="Shop.html">Shop Cheakout</a></li>
+                                        <li><a href="Shop.html">Order Tracker </a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown_menu"><a href="#">Blog<i class="fa-solid fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="Blog_List.html">Blog List</a></li>
+                                        <li><a href="Blog_List.html">Blog grid</a></li>
+                                        <li><a href="Blog_single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="main_contact d-none d-xl-block">
+                            <a href="#+012356789tel"><i class="fa-solid fa-phone"></i>+01 2356 7890</a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- dekstrop menu end-->
+            </div>
+        </div>
+    </header>
+    <!--=== header part start===-->
+
+    <!--backtop button start-->
+    <div class="backtop">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+    <!--backtop button end-->
+
+    <!--=== ofcanvas ===-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="header-offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title cart_title" id="offcanvasRightLabel">Your Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 ">
+                        <div class="cart_heading d-flex justify-content-between">
+                            <h6>Product</h6>
+                            <h6>Price</h6>
+
+                        </div>
+                        <div class="Cart_cont">
+                            <div class="cart_items d-flex">
+                                <div class="col-9">
+                                    <div class="cart_left d-flex">
+                                        <img src="images/cart-01.png" alt="">
+                                        <div class="cart_text">
+                                            <p> All Natural Italian Chicken Meatballs</p>
+                                            <div class="cart_adj d-flex">
+                                                <span><i class="fas fa-plus"></i>0<i
+                                                        class="fa-solid fa-minus"></i></span>
+                                                <h6>In Stock</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cart_right">
+                                        <p>$24.00</p>
+                                        <a href="#" class=" d-flex"><i class="fa-solid fa-trash-can"></i></i>Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart_items d-flex">
+                                <div class="col-9">
+                                    <div class="cart_left d-flex">
+                                        <img src="images/cart-02.png" alt="">
+                                        <div class="cart_text">
+                                            <p> All Natural Italian Chicken Meatballs</p>
+                                            <div class="cart_adj d-flex">
+                                                <span><i class="fas fa-plus"></i>0<i
+                                                        class="fa-solid fa-minus"></i></span>
+                                                <h6>In Stock</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cart_right">
+                                        <p>$24.00</p>
+                                        <a href="#" class=" d-flex"><i class="fa-solid fa-trash-can"></i></i>Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart_items d-flex">
+                                <div class="col-9">
+                                    <div class="cart_left d-flex">
+                                        <img src="images/cart-03.png" alt="">
+                                        <div class="cart_text">
+                                            <p> All Natural Italian Chicken Meatballs</p>
+                                            <div class="cart_adj d-flex">
+                                                <span><i class="fas fa-plus"></i>0<i
+                                                        class="fa-solid fa-minus"></i></span>
+                                                <h6>In Stock</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cart_right">
+                                        <p>$24.00</p>
+                                        <a href="#" class=" d-flex"><i class="fa-solid fa-trash-can"></i></i>Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart_items d-flex">
+                                <div class="col-9">
+                                    <div class="cart_left d-flex">
+                                        <img src="images/cart-04.png" alt="">
+                                        <div class="cart_text">
+                                            <p> All Natural Italian Chicken Meatballs</p>
+                                            <div class="cart_adj d-flex">
+                                                <span><i class="fas fa-plus"></i>0<i
+                                                        class="fa-solid fa-minus"></i></span>
+                                                <h6>In Stock</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cart_right">
+                                        <p>$24.00</p>
+                                        <a href="#" class=" d-flex"><i class="fa-solid fa-trash-can"></i></i>Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="shop_list d-flex justify-content-between">
+                                <div class="list_left">
+                                    <h6>Subtotal</h6>
+                                    <h6>Shipping:</h6>
+                                </div>
+                                <div class="list_right">
+                                    <p>$45.00</p>
+                                    <p>$15.22</p>
+                                </div>
+                            </div>
+                            <div class="total_prc d-flex justify-content-between">
+                                <h5>Total (Incl. VAT)</h5>
+                                <p>$60.22</p>
+                            </div>
+
+                            <div class="cart_btn d-flex justify-content-between">
+                                <div class="cheak_btn">
+                                    <a href="#">Go To Cheakout</a>
+                                </div>
+                                <div class="shop_btn">
+                                    <a href="#">Continue Shopping</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ofcanvas end-->
+
+    <!-- mobile Mune start-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile_menu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <div class="mobile_logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="search_box d-lg-none">
+                <div class="input-group d-flex">
+                    <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+                    <button class="btn btn-outline-secondary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mobile_menu">
+                <ul>
+                    <li><a href="#">Home <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown_home">
+                            <li><a href="#">Home-01</a></li>
+                            <li><a href="#">Home-02</a></li>
+                            <li><a href="#">Home-03</a></li>
+                            <li><a href="#">Home-04</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Collection <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown">
+                            <li><a href="#">Groceries<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega">
+                                    <li><a href="#">Meat & Seafood</a></li>
+                                    <li><a href="#">Forzen Food</a></li>
+                                    <li><a href="#">Beverage</a></li>
+                                    <li><a href="#">Dairy</a></li>
+                                    <li><a href="#">Beverage</a></li>
+                                    <li><a href="#">Bekery & Bread</a></li>
+                                    <li><a href="#">Candy </a></li>
+                                    <li><a href="#">Beverage</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Electronics<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega">
+                                    <li><a href="#">Computer & Laptop</a></li>
+                                    <li><a href="#">Camera</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">Smartwatch</a></li>
+                                    <li><a href="#">Mobile & Tablets</a></li>
+                                    <li><a href="#">Television</a></li>
+                                    <li><a href="#">Smartphone </a></li>
+                                    <li><a href="#">Speakers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Women<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega">
+                                    <li><a href="#">Jewelry</a></li>
+                                    <li><a href="#">Athletic shoes</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Socks</a></li>
+                                    <li><a href="#">Sleepwear</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">T-shirt </a></li>
+                                    <li><a href="#">Hats</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Man<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega">
+                                    <li><a href="#">Glasses</a></li>
+                                    <li><a href="#">Socks</a></li>
+                                    <li><a href="#">Hats</a></li>
+                                    <li><a href="#">Athletic shoes</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Sleepwear</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">T-shirt </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sports<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega">
+                                    <li><a href="#">Gaming Edition</a></li>
+                                    <li><a href="#">Gaming Headset</a></li>
+                                    <li><a href="#">Gaming Mouse pad</a></li>
+                                    <li><a href="#">Gaming Mouse</a></li>
+                                    <li><a href="#">Gaming Glasses</a></li>
+                                    <li><a href="#">Gaming keyboadr</a></li>
+                                    <li><a href="#">Gaming Microphone</a></li>
+                                    <li><a href="#">Controller Charger</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown_page">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Comming Soon</a></li>
+                            <li><a href="#">404</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Hot Offers</a></li>
+
+                    <li><a href="#">Shop <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown_shop">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Shop Details</a></li>
+                            <li><a href="#">Shop Search</a></li>
+                            <li><a href="#">Shop Cart</a></li>
+                            <li><a href="#">Shop Cheakout</a></li>
+                            <li><a href="#">Order Tracker </a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Blog <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown_blog">
+                            <li><a href="#">Blog List</a></li>
+                            <li><a href="#">Blog grid</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mobile Mune end-->
+
+
+    <!--============ About part start ===============-->
+
+    <!-- about header text-->
+    <section id="about_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row d-none d-sm-block">
+                        <div class="col-lg-6">
+                            <div class="about_header_left">
+                                <h2>
+                                    We Sell The Best Product For All Our Customers.</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about_header_right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Ut quam pulvinar ut ligula sapien, tincidi dictumst morbi. A vitae amet pretium
+                                    maecenas sed proin.
+                                    Lorem ipsum dolor sit amet, convetur adipiscing elit. Egestas sagittis erat dui
+                                    convallis venenatis a.
+                                    Lorem ipsum dolor sit amt, constur adipiscing. Aliquam egestas sagittis era.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about header text end-->
+
+    <!-- brand part start-->
+    <section id="about_brand">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row  d-none d-md-block">
+                        <div class="about_brand_img d-flex">
+                            <div class="col-lg-2">
+                                <img src="images/brand-spotify_1.png" alt="">
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="images/brand-slack_2.png" alt="">
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="images/brand-netflix_3.png" alt="">
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="images/brand-heroku_4.png" alt="">
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-block">
+                                <img src="images/brand-vimeo_5.png" alt="">
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-block">
+                                <img src="images/brand-airbnb_6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- brand part end-->
+
+
+
+    <!--What We Provide part start-->
+    <section id="about_Provide">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="about_Provide_left">
+                                <h2>What We Provide?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Platea auctor ultricies gravida integer eget ligula felis.</p>
+                                <img src="images/what-we-provide.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="about_Provide_right d-flex">
+                                <div class="col-6 Provide_right_inner">
+                                    <div class="Provide_right_items">
+                                        <h3>01</h3>
+                                        <h4>Best Prices & Offers</h4>
+                                        <p class="d-none d-sm-block">Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="Provide_right_items">
+                                        <h3>02</h3>
+                                        <h4>Free Delivery</h4>
+                                        <p class="d-none d-sm-block">Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+                                    </div>
+
+                                    <div class="Provide_right_items">
+                                        <h3>03</h3>
+                                        <h4>Easy Returns</h4>
+                                        <p class="d-none d-sm-block">Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--What We Provide part end-->
+
+    <!--About team part start-->
+    <section id="About_team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4 about_team_inner">
+                            <h2>Meet Our Team</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Turpis lacus arcu, viverra luctus posuere imperdiet curabitur euismod amet.</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="about_team_img swiper d-flex">
+                                <div class="swiper-wrapper">
+                                    <div class="col-4 swiper-slide">
+                                        <img src="images/team-1.png" alt="">
+                                        <h5>Ralph Edwards</h5>
+                                        <p>Project Manager</p>
+                                    </div>
+                                    <div class="col-4 swiper-slide">
+                                        <img src="images/team-2.png" alt="">
+                                        <h5>Ralph Edwards</h5>
+                                        <p>Project Manager</p>
+                                    </div>
+                                    <div class="col-4 swiper-slide">
+                                        <img src="images/team-3.png" alt="">
+                                        <h5>Ralph Edwards</h5>
+                                        <p>Project Manager</p>
+                                    </div>
+                                    <div class="col-4 swiper-slide">
+                                        <img src="images/team-4.png" alt="">
+                                        <h5>Ralph Edwards</h5>
+                                        <p>Project Manager</p>
+                                    </div>
+                                    <div class="col-4 swiper-slide">
+                                        <img src="images/team-1.png" alt="">
+                                        <h5>Ralph Edwards</h5>
+                                        <p>Project Manager</p>
+                                    </div>
+                                    <div class="col-4 swiper-slide">
+                                        <img src="images/team-2.png" alt="">
+                                        <h5>Ralph Edwards</h5>
+                                        <p>Project Manager</p>
+                                    </div>
+                                    <div class="col-4 swiper-slide">
+                                        <img src="images/team-3.png" alt="">
+                                        <h5>Ralph Edwards</h5>
+                                        <p>Project Manager</p>
+                                    </div>
+                                    <div class="col-4 swiper-slide">
+                                        <img src="images/team-4.png" alt="">
+                                        <h5>Ralph Edwards</h5>
+                                        <p>Project Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About team part end-->
+
+    <!-- client part start-->
+    <section id="about_client">
+        <div class="container">
+            <div class="row justify-content-center d-none d-sm-block">
+                <div class="col-lg-6 text-center">
+                    <div class="client_heading">
+                        <h2>Who Love Our Work</h2>
+                        <p>Since Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Turpis lacus arcu, viverra luctus posuere imperdiet curabitur euismod amet.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 d-flex">
+                        <div class="client_content_slider">
+                            <div>
+                                <div class="client_content">
+                                    <div class="col-lg-11 d-flex">
+                                        <div class="client_img">
+                                            <img src="images/avater-1.jpg" alt="">
+                                        </div>
+                                        <div class="client_text">
+                                            <h3>Savannah Nguyen</h3>
+                                            <h4>Marketing</h4>
+                                            <p>
+                                                Etiam vitae tortor. Etiam vitae tortor. Proin viverra, ligula sit amet
+                                                ultrices
+                                                semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros.
+                                                Cras id
+                                                dui. Maecenas
+                                                vestibulum mollis diam. A accumsan nisi mauris ac eros. Cras id dui.
+                                                Maecenas
+                                                vestibulum mollis diam.
+                                            </p>
+                                            <div class="client_icons">
+                                                <i class="fa-brands fa-facebook"></i>
+                                                <i class="fa-brands fa-twitter"></i>
+                                                <i class="fa-brands fa-linkedin"></i>
+                                                <i class="fa-brands fa-square-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client_logo align-items-center">
+                            <div class="client_logo_slider">
+                                <div class="col-lg-1">
+                                    <img src="images/avater-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- client part end-->
+
+    <!-- about_news part start-->
+    <section id="about_news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_news_heading">
+                        <h2>Read Our Lates News</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row justify-content-around">
+                        <div class="col-lg-4">
+                            <div class="Lates_News_left">
+                                <img src="images/news-1.jpg" alt="">
+                                <div class="news_left_text">
+                                    <p class="News_img_title">24 Jun 2022 .8 Mins</p>
+                                    <h3>Play Game On A Budget: 7 Tips</h3>
+                                    <p class="d-none d-sm-block">Aenean viverra rhoncus pede. Phasellus blandit leo ut odio.
+                                        Pellentesque commodo eros a enim. Phasellus consectetuer vestibulum elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="about_news_right d-flex">
+                                <div class="col-lg-6">
+                                    <div class="about_news_right_img d-none d-sm-block">
+                                        <img src="images/news-3.jpg" alt="">
+                                        <div class="about_news_right_text d-none d-md-block">
+                                            <p class="News_right_title">24 Jun 2022 .8 Mins</p>
+                                            <h4>Play Game On A Budget: 7 Tips</h4>
+                                        </div>
+                                    </div>
+                                    <div class="about_news_right_img d-none d-sm-block">
+                                        <img src="images/news_2.jpg" alt="">
+                                        <div class="about_news_right_text d-none d-md-block">
+                                            <p class="News_right_title">24 Jun 2022 .8 Mins</p>
+                                            <h4>Play Game On A Budget: 7 Tips</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="about_news_right_img d-none d-sm-block">
+                                        <img src="images/news-3.jpg" alt="">
+                                        <div class="about_news_right_text d-none d-md-block">
+                                            <p class="News_right_title">24 Jun 2022 .8 Mins</p>
+                                            <h4>Play Game On A Budget: 7 Tips</h4>
+                                        </div>
+                                    </div>
+                                    <div class="about_news_right_img d-none d-sm-block">
+                                        <img src="images/news_2.jpg" alt="">
+                                        <div class="about_news_right_text d-none d-md-block">
+                                            <p class="News_right_title">24 Jun 2022 .8 Mins</p>
+                                            <h4>Play Game On A Budget: 7 Tips</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about_news part end-->
+
+    <!--============ About part end ===============-->
+
+
+
+    <!-- notify part start-->
+    <section id="notify">
+        <div class="bannar_items" style="background: url(images/fotter-bg.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="bannar_content text-center">
+                        <h3>Get notified when we're launching new products</h3>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Amet leo, porta aliquet</p>
+                        <p class="d-none d-sm-block">non mattis. Nulla ante pellentesque blandit fermentum.</p>
+                        <input type="text" placeholder="Enter Your Email">
+                        <a href="#">Notify me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- notify part end-->
+
+
+    <!-- footer part start-->
+    <section id="footer">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer_logo">
+                            <a href="#"><img src="images/logo.png" alt=""></a>
+                        </div>
+                        <div class="footer_logo_text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                At praesent eget mauris felis scelerisque enim enim, magna.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="fotter_content">
+                                    <h6>Product</h6>
+                                    <ul>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#"> Shirt</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Groceries</a><span>Hot</span>
+                                        </li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Computer</a><span
+                                                class="sp_two">New</span></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Electronics</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Sports</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="fotter_content">
+                                    <h6>Company</h6>
+                                    <ul>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">About us</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Careers</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">News</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Media kit</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="fotter_content">
+                                    <h6>Resources</h6>
+                                    <ul>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Blog</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Newsletter</a> <span
+                                                class="sp_two">Best</span></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Help centre</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Tutorials</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#"> Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="fotter_content">
+                                    <h6>Legal</h6>
+                                    <ul>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Terms</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Privacy</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Licenses</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Settings</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer part end-->
+
+    <!-- end part -->
+    <section id="end">
+        <div class="container">
+            <div class="col-12 end_border">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="end_left">
+                            <p>© 2022 <a href="#">SuperMart</a>. All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-4 text-end">
+                        <div class="end_right">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end part finish-->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

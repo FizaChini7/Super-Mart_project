@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- header part start-->
+    <header id="top_header">
+        <div class="header_fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-6">
+                        <div class="header_left d-flex">
+                            <div class="logo">
+                                <button class="menu_btn d-lg-none">
+                                    <i class="fas fa-bars" data-bs-toggle="offcanvas" data-bs-target="#mobile_menu">
+                                    </i></button>
+                                <a href="#"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <div class="search_box d-none d-lg-block">
+                                <div class="input-group">
+                                    <!--<i class="fa-solid fa-angle-down"></i>-->
+                                    <select name="" id="" style="-webkit-appearance: none;" class="header_left_value">
+                                        <option value="">Category</option>
+                                        <option value="">Groceries</option>
+                                        <option value="">Computer</option>
+                                        <option value="">Women</option>
+                                        <option value="">Electronics</option>
+                                        <option value="">Men</option>
+                                        <option value="">Baby</option>
+                                        <option value="">Sports</option>
+                                    </select>
+
+                                    <input type="text" class="form-control" placeholder="What are you looking for..."
+                                        aria-label="Text input with 2 dropdown buttons">
+                                    <button class="btn btn-outline-secondary">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <div class="header_right d-flex justify-content-end">
+                            <p class="d-none d-xl-block d-flex"><i class="fas fa-location-dot"></i> Dhaka,Bangladesh
+                            </p>
+                            <div class="country_flags d-none d-md-block">
+                                <div class="flags">
+                                    <div class="input-group mb-3">
+                                        <select name="" id="" style="-webkit-appearance: none;"
+                                            class="header_left_value">
+                                            <option value="">English-USD</option>
+                                            <option value="">Bangla-BDT</option>
+                                            <option value="">Franch-FRF</option>
+                                            <option value="">India-RUPI</option>
+                                            <option value="">Turkish-LIRA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-user-plus"></i>Sing Up</a>
+
+                            <button class="header_cart d-flex" data-bs-toggle="offcanvas"
+                                data-bs-target="#header-offcanvasRight">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Cart</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- dekstrop menu start-->
+                <nav id="dekstrop_menu" class="navbar d-none d-lg-block">
+                    <div class="container">
+                        <div class="main_menu">
+                            <ul>
+                                <li class="dropdown_menu"><a href="#">Home<i class="fa-solid fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="index.html">Home-01</a></li>
+                                        <li><a href="index.html">Home-02</a></li>
+                                        <li><a href="index.html">Home-03</a></li>
+                                        <li><a href="index.html">Home-04</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="mega_menu"><a href="#">Collection<i class="fa-solid fa-angle-down"></i></a>
+                                    <div class="megamenu_container">
+                                        <h5>Groceries
+                                            <ul>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i> Meat &
+                                                        Seafood</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Forzen
+                                                        Food</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Beverage</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Dairy</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Beverage</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Bekery
+                                                        & Bread</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Candy
+                                                    </a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Beverage</a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>Electronics
+                                            <ul>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Computer & Laptop</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Camera</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Headphone</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Smartwatch</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Mobile
+                                                        & Tablets</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Television</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Smartphone </a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Speakers</a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>Women
+                                            <ul>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Jewelry</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Athletic shoes</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Jackets</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Socks</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Sleepwear</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Dresses</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>T-shirt
+                                                    </a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Hats</a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>Man
+                                            <ul>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Glasses</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Socks</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Hats</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Athletic shoes</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Jackets</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Sleepwear</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Dresses</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>T-shirt
+                                                    </a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>Sports
+                                            <ul>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Edition</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Headset</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Mouse pad</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Mouse</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Glasses</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        keyboadr</a></li>
+                                                <li><a href="Collection.html"> <i class="fas fa-arrow-right"></i>Gaming
+                                                        Microphone</a></li>
+                                                <li><a href="Collection.html"> <i
+                                                            class="fas fa-arrow-right"></i>Controller Charger</a></li>
+                                            </ul>
+                                        </h5>
+                                    </div>
+                                </li>
+
+                                <li class="dropdown_menu"><a href="#">Pages<i class="fa-solid fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="About.html">About</a></li>
+                                        <li><a href="Privacy.html">Privacy Policy</a></li>
+                                        <li><a href="Terms&Conditions.html">Terms & Conditions</a></li>
+                                        <li><a href="#">Comming Soon</a></li>
+                                        <li><a href="#">404</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Hot Offers</a></li>
+                                <li class="dropdown_menu"><a href="#">Shop<i class="fa-solid fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="Shop.html">Shop</a></li>
+                                        <li><a href="Shop_details.html">Shop Details</a></li>
+                                        <li><a href="Shop.html">Shop Search</a></li>
+                                        <li><a href="Shop.html">Shop Cart</a></li>
+                                        <li><a href="Shop.html">Shop Cheakout</a></li>
+                                        <li><a href="Shop.html">Order Tracker </a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown_menu"><a href="#">Blog<i class="fa-solid fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="Blog_List.html">Blog List</a></li>
+                                        <li><a href="Blog_List.html">Blog grid</a></li>
+                                        <li><a href="Blog_single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="main_contact d-none d-xl-block">
+                            <a href="#+012356789tel"><i class="fa-solid fa-phone"></i>+01 2356 7890</a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- dekstrop menu end-->
+            </div>
+        </div>
+    </header>
+    <!--=== header part start===-->
+
+    <!--backtop button start-->
+    <div class="backtop">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+    <!--backtop button end-->
+
+    <!--=== ofcanvas ===-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="header-offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title cart_title" id="offcanvasRightLabel">Your Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 ">
+                        <div class="cart_heading d-flex justify-content-between">
+                            <h6>Product</h6>
+                            <h6>Price</h6>
+
+                        </div>
+                        <div class="Cart_cont">
+                            <div class="cart_items d-flex">
+                                <div class="col-9">
+                                    <div class="cart_left d-flex">
+                                        <img src="images/cart-01.png" alt="">
+                                        <div class="cart_text">
+                                            <p> All Natural Italian Chicken Meatballs</p>
+                                            <div class="cart_adj d-flex">
+                                                <span><i class="fas fa-plus"></i>0<i
+                                                        class="fa-solid fa-minus"></i></span>
+                                                <h6>In Stock</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cart_right">
+                                        <p>$24.00</p>
+                                        <a href="#" class=" d-flex"><i class="fa-solid fa-trash-can"></i></i>Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart_items d-flex">
+                                <div class="col-9">
+                                    <div class="cart_left d-flex">
+                                        <img src="images/cart-02.png" alt="">
+                                        <div class="cart_text">
+                                            <p> All Natural Italian Chicken Meatballs</p>
+                                            <div class="cart_adj d-flex">
+                                                <span><i class="fas fa-plus"></i>0<i
+                                                        class="fa-solid fa-minus"></i></span>
+                                                <h6>In Stock</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cart_right">
+                                        <p>$24.00</p>
+                                        <a href="#" class=" d-flex"><i class="fa-solid fa-trash-can"></i></i>Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart_items d-flex">
+                                <div class="col-9">
+                                    <div class="cart_left d-flex">
+                                        <img src="images/cart-03.png" alt="">
+                                        <div class="cart_text">
+                                            <p> All Natural Italian Chicken Meatballs</p>
+                                            <div class="cart_adj d-flex">
+                                                <span><i class="fas fa-plus"></i>0<i
+                                                        class="fa-solid fa-minus"></i></span>
+                                                <h6>In Stock</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cart_right">
+                                        <p>$24.00</p>
+                                        <a href="#" class=" d-flex"><i class="fa-solid fa-trash-can"></i></i>Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart_items d-flex">
+                                <div class="col-9">
+                                    <div class="cart_left d-flex">
+                                        <img src="images/cart-04.png" alt="">
+                                        <div class="cart_text">
+                                            <p> All Natural Italian Chicken Meatballs</p>
+                                            <div class="cart_adj d-flex">
+                                                <span><i class="fas fa-plus"></i>0<i
+                                                        class="fa-solid fa-minus"></i></span>
+                                                <h6>In Stock</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cart_right">
+                                        <p>$24.00</p>
+                                        <a href="#" class=" d-flex"><i class="fa-solid fa-trash-can"></i></i>Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="shop_list d-flex justify-content-between">
+                                <div class="list_left">
+                                    <h6>Subtotal</h6>
+                                    <h6>Shipping:</h6>
+                                </div>
+                                <div class="list_right">
+                                    <p>$45.00</p>
+                                    <p>$15.22</p>
+                                </div>
+                            </div>
+                            <div class="total_prc d-flex justify-content-between">
+                                <h5>Total (Incl. VAT)</h5>
+                                <p>$60.22</p>
+                            </div>
+
+                            <div class="cart_btn d-flex justify-content-between">
+                                <div class="cheak_btn">
+                                    <a href="#">Go To Cheakout</a>
+                                </div>
+                                <div class="shop_btn">
+                                    <a href="#">Continue Shopping</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ofcanvas end-->
+
+    <!-- mobile Mune start-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile_menu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <div class="mobile_logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="search_box d-lg-none">
+                <div class="input-group d-flex">
+                    <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+                    <button class="btn btn-outline-secondary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mobile_menu">
+                <ul>
+                    <li><a class="nav__link" href="#">Home <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown_home sub__menu">
+                            <li><a href="#">Home-01</a></li>
+                            <li><a href="#">Home-02</a></li>
+                            <li><a href="#">Home-03</a></li>
+                            <li><a href="#">Home-04</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav__link" href="#">Collection <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown sub__menu">
+                            <li class="has__dropdown"><a class="nav__link" href="#">Groceries<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega sub__sub-menu">
+                                    <li><a href="#">Meat & Seafood</a></li>
+                                    <li><a href="#">Forzen Food</a></li>
+                                    <li><a href="#">Beverage</a></li>
+                                    <li><a href="#">Dairy</a></li>
+                                    <li><a href="#">Beverage</a></li>
+                                    <li><a href="#">Bekery & Bread</a></li>
+                                    <li><a href="#">Candy </a></li>
+                                    <li><a href="#">Beverage</a></li>
+                                </ul>
+                            </li>
+                            <li class="has__dropdown"><a class="nav__link" href="#">Electronics<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega sub__sub-menu">
+                                    <li><a href="#">Computer & Laptop</a></li>
+                                    <li><a href="#">Camera</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">Smartwatch</a></li>
+                                    <li><a href="#">Mobile & Tablets</a></li>
+                                    <li><a href="#">Television</a></li>
+                                    <li><a href="#">Smartphone </a></li>
+                                    <li><a href="#">Speakers</a></li>
+                                </ul>
+                            </li>
+                            <li class="has__dropdown"><a class="nav__link" href="#">Women<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega sub__sub-menu">
+                                    <li><a href="#">Jewelry</a></li>
+                                    <li><a href="#">Athletic shoes</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Socks</a></li>
+                                    <li><a href="#">Sleepwear</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">T-shirt </a></li>
+                                    <li><a href="#">Hats</a></li>
+                                </ul>
+                            </li>
+                            <li class="has__dropdown"><a class="nav__link" href="#">Man<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega sub__sub-menu">
+                                    <li><a href="#">Glasses</a></li>
+                                    <li><a href="#">Socks</a></li>
+                                    <li><a href="#">Hats</a></li>
+                                    <li><a href="#">Athletic shoes</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Sleepwear</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">T-shirt </a></li>
+                                </ul>
+                            </li>
+                            <li class="has__dropdown"><a class="nav__link" href="#">Sports<i class="fas fa-angle-down"></i></a>
+                                <ul class="mobile_mega sub__sub-menu">
+                                    <li><a href="#">Gaming Edition</a></li>
+                                    <li><a href="#">Gaming Headset</a></li>
+                                    <li><a href="#">Gaming Mouse pad</a></li>
+                                    <li><a href="#">Gaming Mouse</a></li>
+                                    <li><a href="#">Gaming Glasses</a></li>
+                                    <li><a href="#">Gaming keyboadr</a></li>
+                                    <li><a href="#">Gaming Microphone</a></li>
+                                    <li><a href="#">Controller Charger</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav__link" href="#">Pages <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown_page sub__menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Comming Soon</a></li>
+                            <li><a href="#">404</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Hot Offers</a></li>
+
+                    <li><a class="nav__link" href="#">Shop <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown_shop">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Shop Details</a></li>
+                            <li><a href="#">Shop Search</a></li>
+                            <li><a href="#">Shop Cart</a></li>
+                            <li><a href="#">Shop Cheakout</a></li>
+                            <li><a href="#">Order Tracker </a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav__link" href="#">Blog <i class="fas fa-angle-down"></i></a>
+                        <ul class="mobile_dropdown_blog sub__menu">
+                            <li><a href="#">Blog List</a></li>
+                            <li><a href="#">Blog grid</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mobile Mune end-->
+
+
+    <!--================== blog_list_page start =======================-->
+
+    <section id="blog_list_top">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <iframe width="950px" height="500px" style="border-radius: 20px;"
+                            src="https://www.youtube.com/embed/qRrJwgayHME" title="HappyFresh - Online Grocery Shopping"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                        picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blog_list_top_items">
+                            <div class="blog_search d-flex">
+                                <input type="text" placeholder="what are you looking for?"><i
+                                    class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="blog_list_top_catagory">
+                                <h3>Catagory</h3>
+                                <a href="#" class="d-flex"><img src="images/c-icon-01.png" alt="">
+                                    <p>Groceries</p>
+                                </a>
+                                <a href="#" class="d-flex"><img src="images/c-icon-02.png" alt="">
+                                    <p>Electronics</p>
+                                </a>
+                                <a href="#" class="d-flex"><img src="images/c-icon-03.png" alt="">
+                                    <p>Women</p>
+                                </a>
+                                <a href="#" class="d-flex"><img src="images/c-icon-04.png" alt="">
+                                    <p>Man</p>
+                                </a>
+                                <a href="#" class="d-flex"><img src="images/c-icon-05.png" alt="">
+                                    <p>Sports</p>
+                                </a>
+                                <a href="#" class="d-flex"><img src="images/c-icon-06.png" alt="">
+                                    <p>kids</p>
+                                </a>
+                                <a href="#" class="d-flex"><img src="images/c-icon-07.png" alt="">
+                                    <p>Computers</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog_list_contents start-->
+    <section id="blog_list_contents">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="blog_list_contents_info">
+                            <p>24 Jun 2022 .8 Mins</p>
+                            <h2>Jenny Rosen Game strach Has a Game Plan Desk for the Weekday Vegetarian Mordern
+                                wearables buy today</h2>
+                            <p class="d-none d-md-block">the month for celebrating love. It's something we all crave yet can sometimes be put on
+                                the back burner. However, cultivating healthy relationships requires regular attention,
+                                and Valentine's Day is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas.augue quam s lacus viverra ac, molestie tortor laoreet amet euismod
+                                et diam quis aliquam consequat porttitor integer a nisl, in faucibus nunc et aenean
+                                turpis dui dignissim nec scelerisque ullamcorper eu neque, augue quam quis lacus pretium
+                                eros est amet elementum libero convallis feugiat. Nulla faucibus facilisi tincidunt a
+                                arcu, sem donec sed sed.</p>
+                                
+                                <a href="#">Read More</a>
+                        </div>
+                        <div class="blog_list_contents_img">
+                            <img src="images/b-list-01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blog_contents_catagory">
+                            <h3>Recent Post</h3>
+                            <a href="#" class="d-flex"><img src="images/b_cont_1.png" alt="">
+                                <ul>
+                                    <li><p>16 May 2022</p></li>
+                                    <li><h5>Italian Chicken Meatbell</h5></li>
+                                </ul>
+                            </a>
+                            <a href="#" class="d-flex"><img src="images/b_cont_2.png" alt="">
+                                <ul>
+                                    <li><p>16 May 2022</p></li>
+                                    <li><h5>Italian Chicken Meatbell</h5></li>
+                                </ul>
+                            </a>
+                            <a href="#" class="d-flex"><img src="images/b_cont_3.png" alt="">
+                                <ul>
+                                    <li><p>16 May 2022</p></li>
+                                    <li><h5>Italian Chicken Meatbell</h5></li>
+                                </ul>
+                            </a>
+                            <a href="#" class="d-flex"><img src="images/b_cont_4.png" alt="">
+                                <ul>
+                                    <li><p>16 May 2022</p></li>
+                                    <li><h5>Italian Chicken Meatbell</h5></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="blog_list_tags">
+                            <h3>Popular Tags</h3>
+                            <a href="#">Men Shart</a>
+                            <a href="#">Sports</a>
+                            <a href="#">Kids</a>
+                            <a href="#">Jackets</a>
+                            <a href="#">Foods</a>
+                            <a href="#">Hats</a>
+                            <a href="#">Health</a>
+                            <a href="#">Socks</a>
+                            <a href="#">T-shirt</a>
+                        </div>
+
+                        <div class="blog_list_add d-none">
+                            <a href="ads-banner.png"><img src="images/ads-banner.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="blog_list_info">
+                            <p>24 Jun 2022 .8 Mins</p>
+                            <h2>Jenny Rosen Game strach Has a Game Plan Desk for the Weekday Vegetarian Mordern
+                                wearables buy today</h2>
+                            <p class="d-none d-md-block">the month for celebrating love. It's something we all crave yet can sometimes be put on
+                                the back burner. However, cultivating healthy relationships requires regular attention,
+                                and Valentine's Day is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas.augue quam s lacus viverra ac, molestie tortor laoreet amet euismod
+                                et diam quis aliquam consequat porttitor integer a nisl, in faucibus nunc et aenean
+                                turpis dui dignissim nec scelerisque ullamcorper eu neque, augue quam quis lacus pretium
+                                eros est amet elementum libero convallis feugiat. Nulla faucibus facilisi tincidunt a
+                                arcu, sem donec sed sed.</p>
+                                
+                                <a href="#">Read More</a>
+                        </div>
+                        <div class="blog_list_info_img blog_list_info_img_one">
+                            <div class="img_one_overly">
+                                <p>24 Jun 2022 .8 Mins</p>
+                                <h2>Jenny Rosen Game strach Has a Game Vegetarian Mordern wearable</h2>
+                            </div>
+                            <img class="img_one" src="images/b-list-02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="blog_list_content_img">
+                            <img src="images/b-list-03.jpg" alt="">
+                        </div>
+
+                        <div class="blog_list_contents_info">
+                            <p>24 Jun 2022 .8 Mins</p>
+                            <h2>Jenny Rosen Game strach Has a Game Plan Desk for the Weekday Vegetarian Mordern
+                                wearables buy today</h2>
+                            <p class="d-none d-md-block">the month for celebrating love. It's something we all crave yet can sometimes be put on
+                                the back burner. However, cultivating healthy relationships requires regular attention,
+                                and Valentine's Day is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas.augue quam s lacus viverra ac, molestie tortor laoreet amet euismod
+                                et diam quis aliquam consequat porttitor integer a nisl, in faucibus nunc et aenean
+                                turpis dui dignissim nec scelerisque ullamcorper eu neque, augue quam quis lacus pretium
+                                eros est amet elementum libero convallis feugiat. Nulla faucibus facilisi tincidunt a
+                                arcu, sem donec sed sed.</p>
+                                
+                                <a href="#">Read More</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-3">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="col-lg-9 text-center">
+                    <div class="blog_client_content">
+                        <i class="fa-solid fa-quote-right"></i>
+                        <h4>Combined with a handful of model sentence structures, generate generated
+                         Lorem Ipsum is therefore always the generated Lorem Ipsum is therefore always</h4>
+                        <p>Ralph Jackson</p>
+                    </div>
+                    <div class="blog_client_text text-start">
+                        <p class="d-none d-md-block">the month for celebrating love. It's something we all crave yet can sometimes be put on
+                            the back burner. However, cultivating healthy relationships requires regular attention,
+                            and Valentine's Day is an excellent time to jump-start these intentions. So, we've
+                            gathered some ideas is an excellent time to jump-start these intentions. So, we've
+                            gathered some ideas.augue quam s lacus viverra ac, molestie tortor laoreet amet euismod
+                            et diam quis aliquam consequat porttitor integer a nisl, in faucibus nunc et aenean
+                            turpis dui dignissim nec scelerisque ullamcorper eu neque, augue quam quis lacus pretium
+                            eros est amet elementum libero convallis feugiat. Nulla faucibus facilisi tincidunt a
+                            arcu, sem donec sed sed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                            
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="col-lg-9">
+                    <div class="blog_list_slider swiper">
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide" src="images/b-list-03.jpg" alt="">
+                            <img class="swiper-slide" src="images/b-list-02.jpg" alt="">
+                            <img class="swiper-slide" src="images/b-list-01.jpg" alt="">
+                        </div>
+                        <div class="blog_slider_next"><i class="fa-solid fa-angle-right"></i></div>
+                        <div class="blog_slider_prev"><i class="fa-solid fa-angle-left"></i></div>
+                    </div>
+                        
+
+                        <div class="blog_list_contents_info">
+                            <p>24 Jun 2022 .8 Mins</p>
+                            <h2>Jenny Rosen Game strach Has a Game Plan Desk for the Weekday Vegetarian Mordern
+                                wearables buy today</h2>
+                            <p class="d-none d-md-block">the month for celebrating love. It's something we all crave yet can sometimes be put on
+                                the back burner. However, cultivating healthy relationships requires regular attention,
+                                and Valentine's Day is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas.augue quam s lacus viverra ac, molestie tortor laoreet amet euismod
+                                et diam quis aliquam consequat porttitor integer a nisl, in faucibus nunc et aenean
+                                turpis dui dignissim nec scelerisque ullamcorper eu neque, augue quam quis lacus pretium
+                                eros est amet elementum libero convallis feugiat. Nulla faucibus facilisi tincidunt a
+                                arcu, sem donec sed sed.</p>
+                                
+                                <a href="#">Read More</a>
+                        </div>
+                        
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="col-lg-9">
+                    <div class="blog_list_info_img blog_list_info_img_one">
+                        <img class="img_one" src="images/Tuner.png" alt="">
+                    </div>
+                        
+
+                        <div class="blog_list_contents_info">
+                            <p>24 Jun 2022 .8 Mins</p>
+                            <h2>Jenny Rosen Game strach Has a Game Plan Desk for the Weekday Vegetarian Mordern
+                                wearables buy today</h2>
+                            <p class="d-none d-md-block">the month for celebrating love. It's something we all crave yet can sometimes be put on
+                                the back burner. However, cultivating healthy relationships requires regular attention,
+                                and Valentine's Day is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas is an excellent time to jump-start these intentions. So, we've
+                                gathered some ideas.augue quam s lacus viverra ac, molestie tortor laoreet amet euismod
+                                et diam quis aliquam consequat porttitor integer a nisl, in faucibus nunc et aenean
+                                turpis dui dignissim nec scelerisque ullamcorper eu neque, augue quam quis lacus pretium
+                                eros est amet elementum libero convallis feugiat. Nulla faucibus facilisi tincidunt a
+                                arcu, sem donec sed sed.</p>
+                                
+                                <a href="#">Read More</a>
+                        </div>
+                        
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- blog_list_contents end-->
+
+    <!--================== blog_list_page end =======================-->
+
+
+
+    <!-- footer part start-->
+    <section id="footer">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer_logo">
+                            <a href="#"><img src="images/logo.png" alt=""></a>
+                        </div>
+                        <div class="footer_logo_text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                At praesent eget mauris felis scelerisque enim enim, magna.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="fotter_content">
+                                    <h6>Product</h6>
+                                    <ul>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#"> Shirt</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Groceries</a><span>Hot</span>
+                                        </li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Computer</a><span
+                                                class="sp_two">New</span></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Electronics</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Sports</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="fotter_content">
+                                    <h6>Company</h6>
+                                    <ul>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">About us</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Careers</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">News</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Media kit</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="fotter_content">
+                                    <h6>Resources</h6>
+                                    <ul>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Blog</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Newsletter</a> <span
+                                                class="sp_two">Best</span></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Help centre</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Tutorials</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#"> Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="fotter_content">
+                                    <h6>Legal</h6>
+                                    <ul>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Terms</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Privacy</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Licenses</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Settings</a></li>
+                                        <li> <i class="fas fa-arrow-right"></i><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer part end-->
+
+    <!-- end part -->
+    <section id="end">
+        <div class="container">
+            <div class="col-12 end_border">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="end_left">
+                            <p>© 2022 <a href="#">SuperMart</a>. All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-4 text-end">
+                        <div class="end_right">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end part finish-->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
